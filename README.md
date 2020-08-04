@@ -1,4 +1,4 @@
-# Fantasy Golf Pool
+# GLT
 
 ## Project Functionality
 

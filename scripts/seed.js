@@ -9,22 +9,22 @@ var db = require("../models");
 
 db.sequelize
   .sync({ force: true })
-  .then(function() {
+  .then(function () {
     return seedParticipants();
   })
-  .then(function() {
+  .then(function () {
     return seedPlayers();
   })
-  .then(function() {
+  .then(function () {
     return seedPlayerParticpants();
   })
-  .then(function() {
+  .then(function () {
     return seedTournaments();
   })
-  .then(function() {
+  .then(function () {
     return seedEarnings();
   })
-  .then(function() {
+  .then(function () {
     db.sequelize.close();
   });
 
